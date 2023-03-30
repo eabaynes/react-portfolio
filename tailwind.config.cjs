@@ -14,6 +14,28 @@ module.exports = {
         montserrat: ["Montserrat", "sans-serif"],
         "bebas-neue": ["Bebas Neue", "cursive"],
       },
+      keyframes: {
+        typing: {
+          "0%": {
+            width: "0%",
+            visibility: "hidden",
+          },
+          "100%": {
+            width: "100%",
+          },
+        },
+        blink: {
+          "50%": {
+            borderColor: "transparent",
+          },
+          "100%": {
+            borderColor: "black",
+          },
+        },
+      },
+      animation: {
+        typing: "typing 2s steps(20, end), blink .7s step-end infinite",
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],
