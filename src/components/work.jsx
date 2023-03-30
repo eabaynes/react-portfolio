@@ -9,9 +9,9 @@ function workCards() {
       {Data.map((project) => {
         return (
           <div className="card" key={project.id}>
-            <img src={project.image} alt={project.title} />
+            <img src={project.src} alt={project.title} />
             <h2>{project.title}</h2>
-            <p>{project.description}</p>
+            <p>{project.skills}</p>
             <a href={project.github}>Github</a>
             <a href={project.deployed}>Deployed</a>
           </div>
