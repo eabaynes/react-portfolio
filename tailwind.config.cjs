@@ -9,6 +9,11 @@ module.exports = {
         "deep-purple": "#302932",
         "mid-purple": "#413A4E"
     },
+    fontFamily: {
+      "montserrat": ["Montserrat", "sans-serif"],
+      "bebas-neue": ["Bebas Neue", "cursive"]
+    },
+  },
   },
   plugins: [require("@tailwindcss/forms")],
 };

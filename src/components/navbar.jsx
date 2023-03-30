@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 
 export default function NavBar(props) {
   return (
-    <nav>
-      <ul>
+    <nav className="transparent">
+      <ul className="flex">
         <li>
           <a href="/" onClick={props.navClickHandler}>
             Home

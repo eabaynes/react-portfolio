@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  @apply bg-gradient-to-r from-cool-white to-tan font-montserrat;
+}
