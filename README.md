@@ -10,8 +10,8 @@ If you'd like to install and view this page locally, you can clone the repositor
 
 ## Deployed Application
 
-You can view the deployed version of this portfolio [here]()
+You can view the deployed version of this portfolio [here](https://jocular-croquembouche-688f52.netlify.app/)
 
 ## Screenshots
 
-![Screenshot of portfolio](./src/images/portfolio-screenshot.png)
+![Screenshot of portfolio](src\images\portfolio-mockup.png)
