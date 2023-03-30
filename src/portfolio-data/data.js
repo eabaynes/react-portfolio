@@ -1,5 +1,5 @@
 import foodFinder from "../images/Food-Finder-Mock-Up.png";
-import JATE from "../images/jate.png";
+import JATE from "../images/JATE.png";
 import overBooked from "../images/OverBooked.jpg";
 import passwordGen from "../images/password-gen-mock.up.png";
 import quizGame from "../images/quiz-game-mockup.png";
