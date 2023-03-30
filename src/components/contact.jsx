@@ -45,10 +45,16 @@ export default function Contact() {
   }
 
   return (
-    <section>
-      <h1>Contact Me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
+    <section className="flex flex-col items-center">
+      <h1 className="my-5 font-bebas-neue text-6xl text-deep-purple">
+        Contact Me
+      </h1>
+      <form
+        id="contact-form"
+        className="m-2 rounded-md bg-mid-purple bg-opacity-30 p-4"
+        onSubmit={handleSubmit}
+      >
+        <div className="flex flex-col">
           <label htmlFor="name">Name:</label>
           <input
             type="text"
@@ -57,7 +63,7 @@ export default function Contact() {
             name="name"
           />
         </div>
-        <div>
+        <div className="flex flex-col">
           <label htmlFor="email">Email address:</label>
           <input
             type="email"
@@ -66,7 +72,7 @@ export default function Contact() {
             name="email"
           />
         </div>
-        <div>
+        <div className="flex flex-col">
           <label htmlFor="message">Message:</label>
           <textarea
             name="message"
@@ -80,10 +86,15 @@ export default function Contact() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button type="submit">Submit</button>
+        <button
+          type="submit"
+          className="mx-2 my-1 rounded-lg bg-deep-purple px-2 py-1 text-center font-bebas-neue text-white"
+        >
+          Submit
+        </button>
       </form>
 
-      <div>
+      <div className="my-3 text-sm">
         <h2>Or, you can reach out to me through LinkedIn below</h2>
       </div>
     </section>

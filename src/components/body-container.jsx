@@ -9,15 +9,15 @@ export default function BodyContainer(props) {
       return (
         <div>
           <img
-            className="absolute left-0 top-0 -z-10 h-screen w-screen"
+            className="fixed top-0 -z-10 h-screen overflow-hidden"
             src="./Cactus.png"
             alt="Cactus"
           />
-          <div className="absolute right-20 top-20 mt-20 flex flex-col justify-end pr-20 pt-20">
-            <h1 className="font-bebas-neue text-9xl text-deep-purple">
+          <div className=" fixed right-10 top-1/2 flex flex-col justify-end">
+            <h1 className="font-bebas-neue text-4xl text-deep-purple md:text-7xl lg:text-9xl">
               Elliot Baynes
             </h1>
-            <h2 className="ml-20 font-bebas-neue text-4xl text-mid-purple">
+            <h2 className="font-bebas-neue text-mid-purple lg:ml-20 lg:text-4xl">
               Front End Developer
             </h2>
           </div>
