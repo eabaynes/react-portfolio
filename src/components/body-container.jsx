@@ -8,7 +8,7 @@ export default function BodyContainer(props) {
     case "/":
       return (
         <div>
-          <img src="../public/Cactus.png" alt="Cactus" />
+          <img src="./Cactus.png" alt="Cactus" />
           <h1> Elliot Baynes</h1>
           <h2> Full Stack Developer</h2>
         </div>
