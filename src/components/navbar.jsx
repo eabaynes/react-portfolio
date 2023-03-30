@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 export default function NavBar(props) {
   return (
     <nav className="transparent">
-      <ul className="flex">
+      <img src="./EB.png" alt="logo" />
+      <ul className="flex justify-end">
         <li>
           <a href="/" onClick={props.navClickHandler}>
             Home
