@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="fixed bottom-3 right-10 text-lg text-mid-purple">
+    <footer className="fixed bottom-3 right-20 text-lg text-mid-purple">
       <ul className="flex justify-end">
         <li className="mx-5">
           <a href="https://stackoverflow.com/users/21523615/ceramiccat">
