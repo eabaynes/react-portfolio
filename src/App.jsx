@@ -1,7 +1,7 @@
 import React from "react";
 import BodyContainer from "./components/body-container.jsx";
-import Footer from "./components/Footer.jsx";
-import NavBar from "./components/NavBar.jsx";
+import Footer from "./components/footer.jsx";
+import NavBar from "./components/navbar.jsx";
 
 export default function App() {
   const [currentPage, setCurrentPage] = React.useState("/");
