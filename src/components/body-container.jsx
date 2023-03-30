@@ -1,21 +1,24 @@
 import PropTypes from "prop-types";
 import About from "./about";
 import Contact from "./contact";
-import Home from "./home";
 import Work from "./work";
 
 export default function BodyContainer(props) {
   switch (props.currentPage) {
     case "/":
-      return <Home />;
+      return (
+        <div>
+          <img src="../public/Cactus.png" alt="Cactus" />
+          <h1> Elliot Baynes</h1>
+          <h2> Full Stack Developer</h2>
+        </div>
+      );
     case "/about":
       return <About />;
     case "/contact":
       return <Contact />;
     case "/work":
       return <Work />;
-    default:
-      return <Home />;
   }
 }
 
