@@ -16,13 +16,13 @@ export default function NavBar(props) {
           </a>
         </li>
         <li className="mx-5">
-          <a href="/contact" onClick={props.navClickHandler}>
-            Contact
+          <a href="/work" onClick={props.navClickHandler}>
+            Work
           </a>
         </li>
         <li className="mx-5">
-          <a href="/work" onClick={props.navClickHandler}>
-            Work
+          <a href="/contact" onClick={props.navClickHandler}>
+            Contact
           </a>
         </li>
       </ul>
