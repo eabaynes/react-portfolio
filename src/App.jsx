@@ -1,22 +1,19 @@
-import { createBroswerRouter, RouterProvider } from "react-router-dom";
-import Layout from "./layouts/layout.jsx";
-import About from "./pages/about.jsx";
-import Contact from "./pages/contact.jsx";
-import Home from "./pages/home.jsx";
-import Work from "./pages/work.jsx";
-
-const router = createBroswerRouter([
-  {
-    element: <Layout />,
-    children: [
-      { path: "/", element: <Home /> },
-      { path: "/about", element: <About /> },
-      { path: "/work", element: <Work /> },
-      { path: "/contact", element: <Contact /> },
-    ],
-  },
-]);
+import React from "react";
+import BodyContainer from "./components/body-container.jsx";
+import NavBar from "./components/NavBar.jsx";
 
 export default function App() {
-  return <RouterProvider router={router} />;
+  const [currentPage, setCurrentPage] = React.useState("/");
+
+  const navClickHandler = (event) => {
+    event.preventDefault();
+    setCurrentPage(event.target.getAttribute("href"));
+  };
+
+  return (
+    <>
+      <NavBar navClickHandler={navClickHandler} />
+      <BodyContainer currentPage={currentPage} />
+    </>
+  );
 }

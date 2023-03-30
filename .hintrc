@@ -1,6 +1,9 @@
 {
-  "extends": ["web-recommended"],
+  "extends": [
+    "web-recommended"
+  ],
   "hints": {
-    "compat-api/css": 0
+    "compat-api/css": 0,
+    "html-checker": "off"
   }
 }
