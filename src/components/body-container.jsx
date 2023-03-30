@@ -8,9 +8,19 @@ export default function BodyContainer(props) {
     case "/":
       return (
         <div>
-          <img src="./Cactus.png" alt="Cactus" />
-          <h1> Elliot Baynes</h1>
-          <h2> Full Stack Developer</h2>
+          <img
+            className="absolute left-0 top-0 -z-10 h-screen w-screen"
+            src="./Cactus.png"
+            alt="Cactus"
+          />
+          <div className="absolute right-20 top-20 mt-20 flex flex-col justify-end pr-20 pt-20">
+            <h1 className="font-bebas-neue text-9xl text-deep-purple">
+              Elliot Baynes
+            </h1>
+            <h2 className="ml-20 font-bebas-neue text-4xl text-mid-purple">
+              Front End Developer
+            </h2>
+          </div>
         </div>
       );
     case "/about":
