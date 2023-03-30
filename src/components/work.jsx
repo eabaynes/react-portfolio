@@ -2,14 +2,13 @@
 import Data from "../portfolio-data/data.js";
 
 // function to map through the data and return a card for each project
-function workCards() {
+export default function Work() {
   return (
-    <div>
-      <h1>Work</h1>
+    <div className="grid grid-cols-3">
       {Data.map((project) => {
         return (
-          <div className="card" key={project.id}>
-            <img src={project.src} alt={project.title} />
+          <div className="m-2 flex flex-col" key={project.id}>
+            <img src={project.src} alt={project.title} className="w-max" />
             <h2>{project.title}</h2>
             <p>{project.skills}</p>
             <a href={project.github}>Github</a>
@@ -19,8 +18,4 @@ function workCards() {
       })}
     </div>
   );
-}
-
-export default function Work() {
-  return <div>{workCards()}</div>;
 }
