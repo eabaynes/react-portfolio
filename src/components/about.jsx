@@ -1,20 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
 export default function About() {
   return (
-    <div className="flex justify-between">
+    <div
+      className="flex flex-col 
+    items-center justify-between xl:flex-row"
+    >
       <img
         src="./Portrait.png"
         alt="selfie"
-        className="mt-20 h-1/4 w-1/4 px-5 py-5"
+        className="my-2 md:w-2/3 lg:mt-20 lg:h-1/4 lg:w-1/4 lg:px-5 lg:py-5"
       />
-      <div className="flex flex-col justify-center px-10 py-20">
+      <div className="mb-8 flex flex-col items-center justify-center lg:mb-0 lg:px-10 lg:pt-20">
         <div className="w-max">
           {/* typing animation adapted from https://play.tailwindcss.com/q6LZjWKr97 */}
-          <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black font-bebas-neue text-6xl text-deep-purple ">
+          <h1 className="ml-6 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black font-bebas-neue text-4xl text-deep-purple md:text-6xl ">
             Hi! My name is Elliot
           </h1>
         </div>
-        <div className="mx-10 my-10 flex flex-col text-lg text-mid-purple">
+        <div className=" mx-4 flex flex-col text-sm text-mid-purple lg:mx-10 lg:my-10 lg:text-lg">
           <p className="my-3">
             I'm a former Chef turned Web Developer! After 10 years cooking and
             managing foodservice operations, I decided it was time for a change
