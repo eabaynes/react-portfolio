@@ -1,18 +1,19 @@
 import foodFinder from "../images/Food-Finder-Mock-Up.png";
-import JATE from "../images/JATE.png";
 import overBooked from "../images/OverBooked.jpg";
+import RALLY from "../images/Rally-about.jpg";
+import weatherChecker from "../images/Weather-Checker.png";
 import passwordGen from "../images/password-gen-mock.up.png";
 import quizGame from "../images/quiz-game-mockup.png";
-import weatherChecker from "../images/Weather-Checker.png";
 
 export default [
   {
     id: 1,
-    title: "JATE",
-    github: "https://github.com/eabaynes/offline-text-editor",
-    deployed: "https://jate-offline-text-editor.herokuapp.com/",
-    skills: "PWAs, Service Workers, Heroku, JS, HTML, CSS",
-    src: JATE,
+    title: "RALLY",
+    github: "https://github.com/luksvrd/Rally",
+    deployed: "https://dulcet-cascaron-584908.netlify.app/",
+    skills:
+      "React, Apollo, GraphQL, MongoDB, Mongoose, Express, Node, Heroku, Netlify, TailwindCSS",
+    src: RALLY,
   },
   {
     id: 2,
